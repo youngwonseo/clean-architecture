@@ -34,6 +34,8 @@ dependencies {
 	implementation("com.querydsl:querydsl-jpa:5.1.0:jakarta")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+	testImplementation("io.kotest:kotest-runner-junit5:5.9.0")
+	testImplementation("io.kotest.extensions:kotest-extensions-spring:1.3.0")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 

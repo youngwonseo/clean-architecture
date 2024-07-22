@@ -8,3 +8,17 @@ spring:
     username: myuser
     password: secret
     driver-class-name: com.mysql.cj.jdbc.Driver
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:test
+    driverClassName: org.h2.Driver
+    username: sa
+    password:

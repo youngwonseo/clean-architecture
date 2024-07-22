@@ -4,5 +4,5 @@ import com.example.market.product.domain.Product
 
 interface ProductQueryUseCase {
     fun getOne(id: Long): Product?
-    fun getList(lastId: Long?, size: Long): List<Product>
+    fun getList(lastId: Long? = null, size: Long): List<Product>
 }
